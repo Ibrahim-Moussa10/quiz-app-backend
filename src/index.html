@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login/Register Tabs</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/component.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+  </head>
+  <body>
+    <div class="tab-container">
+      <div class="tabs">
+        <div class="tab active" id="loginTab">Login</div>
+        <div class="tab" id="registerTab">Register</div>
+      </div>
+
+      <div id="login" class="form-container active">
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" class="login-btn">Login</button>
+          <div class="message" id="loginMessage"></div>
+        </form>
+      </div>
+
+      <div id="register" class="form-container">
+        <form id="registerForm">
+          <input
+            type="text"
+            id="registerUsername"
+            placeholder="Username"
+            required
+          />
+          <input type="email" id="registerEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="registerPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" class="login-btn">Register</button>
+          <div class="message" id="registerMessage"></div>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts/auth.js"></script>
+    <script src="./scripts/quizzess.js"></script>
+  </body>
+</html>

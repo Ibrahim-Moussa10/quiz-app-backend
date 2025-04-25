@@ -1,0 +1,19 @@
+.tab-container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 60px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(249, 227, 255);
+}

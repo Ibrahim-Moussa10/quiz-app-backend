@@ -1,0 +1,170 @@
+.tabs {
+  display: flex;
+  cursor: pointer;
+  background: rgb(247, 246, 246);
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.tab.active {
+  background: rgb(223, 223, 223);
+  font-weight: bold;
+}
+
+.form-container {
+  padding: 20px;
+  display: none;
+  height: 250px;
+}
+
+.form-container.active {
+  display: block;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.login-btn {
+  margin-top: auto;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  background: rgb(114, 114, 153);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: rgba(114, 114, 153, 0.788);
+}
+
+.message {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.container h1 {
+  background-image: linear-gradient(45deg, #f3b8ff 0%, #e77aff 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container li {
+  margin-block: 5px;
+}
+
+.container li a {
+  text-decoration: none;
+  color: rgb(114, 114, 153);
+  font-size: 18px;
+}
+
+.container li a:hover {
+  color: rgba(114, 114, 153, 0.781);
+}
+
+.question-block {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.527);
+  border-radius: 10px;
+  background-color: rgba(255, 232, 232, 0.603);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.answer-label {
+  display: flex;
+}
+
+.answer-label div {
+  flex: 2;
+}
+
+.answer-label input {
+  flex: 1;
+}
+
+.overlay-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-bg.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.result-alert {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  text-align: center;
+  padding: 32px 8px;
+  width: 400px;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
+}
+
+.result-aletr-text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
