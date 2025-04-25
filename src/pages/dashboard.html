@@ -3,38 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../styles/base.css" />
-    <link rel="stylesheet" href="../styles/table.css" />
-    <link rel="stylesheet" href="../styles/component.css" />
-    <link rel="stylesheet" href="../styles/layout.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/media-query.css" />
   </head>
   <body>
     <div class="container">
       <h1>Admin Dashboard</h1>
-      <button id="showUserDataBtn">Show User Data</button>
-      <table id="userTable">
-        <thead>
-          <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-      <div class="show-section">
+
+      <section>
+        <button id="showUserDataBtn">Show User Data</button>
+        <table id="userTable">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section class="show-section">
         <button id="showQuizzesBtn">Show Quizzes</button>
         <h2 class="quiz-h2">Created Quizzes</h2>
         <ol id="quizList" class="list-ol"></ol>
+      </section>
 
-        <div class="show-section">
-          <input type="text" id="quizIdInput" placeholder="Enter Quiz ID" />
-          <button id="showQuestionsBtn">Show Questions</button>
-          <h2>Quiz Questions</h2>
-          <ol id="questionsList" class="list-ol"></ol>
-        </div>
-      </div>
-      <div>
+      <section class="show-section">
+        <input type="text" id="quizIdInput" placeholder="Enter Quiz ID" />
+        <button id="showQuestionsBtn">Show Questions</button>
+        <h2>Quiz Questions</h2>
+        <ol id="questionsList" class="list-ol"></ol>
+      </section>
+
+      <section>
+        <h2>Manage Quizzes</h2>
         <input type="text" id="quizTitle" placeholder="Enter quiz title" />
         <button id="createQuizbtn">Create Quiz</button>
         <input type="text" id="quizID" placeholder="Enter quiz ID" />
@@ -50,57 +54,78 @@
           placeholder="Enter quiz ID to delete"
         />
         <button id="deleteQuizbtn">Delete Quiz</button>
-      </div>
-      <input type="text" id="questionTitle" placeholder="Enter question text" />
-      <input type="text" id="optionA" placeholder="Option A" />
-      <input type="text" id="optionB" placeholder="Option B" />
-      <input type="text" id="optionC" placeholder="Option C" />
-      <input type="text" id="optionD" placeholder="Option D" />
-      <select id="correctOption">
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-        <option value="C">Option C</option>
-        <option value="D">Option D</option>
-      </select>
-      <input
-        type="text"
-        id="quizIDQuestion"
-        placeholder="Enter quiz ID for the question"
-      />
-      <button id="createQuestionbtn">Create Question</button>
-      <h2>Edit Question</h2>
-      <input
-        type="text"
-        id="quizIDForQuestion"
-        placeholder="Enter quiz ID for the question"
-      />
-      <input type="text" id="editQuestionID" placeholder="Enter question ID" />
-      <input
-        type="text"
-        id="editQuestionTitle"
-        placeholder="Enter new question text"
-      />
+      </section>
 
-      <input type="text" id="editOptionA" placeholder="New Option A" />
-      <input type="text" id="editOptionB" placeholder="New Option B" />
-      <input type="text" id="editOptionC" placeholder="New Option C" />
-      <input type="text" id="editOptionD" placeholder="New Option D" />
-      <select id="editCorrectOption">
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-        <option value="C">Option C</option>
-        <option value="D">Option D</option>
-      </select>
-      <button id="editQuestionBtn">Edit Question</button>
-      <h2>Delete Question</h2>
-      <input
-        type="text"
-        id="deleteQuestionID"
-        placeholder="Enter question ID to delete"
-      />
-      <button id="deleteQuestionBtn">Delete Question</button>
-      <button id="logoutBtn">Logout</button>
+      <section>
+        <h2>Create Question</h2>
+        <input
+          type="text"
+          id="questionTitle"
+          placeholder="Enter question text"
+        />
+        <input type="text" id="optionA" placeholder="Option A" />
+        <input type="text" id="optionB" placeholder="Option B" />
+        <input type="text" id="optionC" placeholder="Option C" />
+        <input type="text" id="optionD" placeholder="Option D" />
+        <select id="correctOption">
+          <option value="A">Option A</option>
+          <option value="B">Option B</option>
+          <option value="C">Option C</option>
+          <option value="D">Option D</option>
+        </select>
+        <input
+          type="text"
+          id="quizIDQuestion"
+          placeholder="Enter quiz ID for the question"
+        />
+        <button id="createQuestionbtn">Create Question</button>
+      </section>
+
+      <section>
+        <h2>Edit Question</h2>
+        <input
+          type="text"
+          id="quizIDForQuestion"
+          placeholder="Enter quiz ID for the question"
+        />
+        <input
+          type="text"
+          id="editQuestionID"
+          placeholder="Enter question ID"
+        />
+        <input
+          type="text"
+          id="editQuestionTitle"
+          placeholder="Enter new question text"
+        />
+        <input type="text" id="editOptionA" placeholder="New Option A" />
+        <input type="text" id="editOptionB" placeholder="New Option B" />
+        <input type="text" id="editOptionC" placeholder="New Option C" />
+        <input type="text" id="editOptionD" placeholder="New Option D" />
+        <select id="editCorrectOption">
+          <option value="A">Option A</option>
+          <option value="B">Option B</option>
+          <option value="C">Option C</option>
+          <option value="D">Option D</option>
+        </select>
+        <button id="editQuestionBtn">Edit Question</button>
+      </section>
+
+      <section>
+        <h2>Delete Question</h2>
+        <input
+          type="text"
+          id="deleteQuestionID"
+          placeholder="Enter question ID to delete"
+        />
+        <button id="deleteQuestionBtn">Delete Question</button>
+      </section>
+
+      <section>
+        <button id="logoutBtn">Logout</button>
+      </section>
     </div>
+
     <script src="../scripts/dashboard.js"></script>
   </body>
 </html>
