@@ -168,3 +168,23 @@ button:hover {
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+.list-ol {
+  gap: 10px;
+  margin-top: 5px;
+  display: flex;
+}
+.quiz-h2 {
+  margin-bottom: 0px;
+}
+
+.show-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e77aff;
+  min-width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
