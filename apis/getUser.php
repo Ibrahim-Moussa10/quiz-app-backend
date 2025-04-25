@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
-include('connection.php');
+include('../config/connection.php');
 
 try {
     $stmt = $pdo->query("SELECT users.id, users.email, users.username, scores.quiz_id, scores.score 

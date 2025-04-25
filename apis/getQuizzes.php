@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 header("Content-Type: application/json");
 
-include('connection.php');
+include('../config/connection.php');
 
 try {
     $stmt = $pdo->query("SELECT id, title FROM quizzes");

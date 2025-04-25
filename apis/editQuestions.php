@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 header("Content-Type: application/json");
 
-include('connection.php');
+include('../config/connection.php');
 $data = json_decode(file_get_contents("php://input"), true);
 
 $quizID = $data['quizID'] ?? null;

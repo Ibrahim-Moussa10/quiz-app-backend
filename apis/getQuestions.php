@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
-include('connection.php');
+include('../config/connection.php');
 $quiz_id = $_GET['quiz_id'] ?? null;
 
 if (!$quiz_id) {

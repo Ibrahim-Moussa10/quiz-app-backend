@@ -16,7 +16,7 @@ if (!isset($data['username'], $data['email'], $data['password'])) {
     exit;
 }
 
-include('connection.php');
+include('../config/connection.php');
 
 $username = trim($data['username']);
 $email = trim(strtolower($data['email']));

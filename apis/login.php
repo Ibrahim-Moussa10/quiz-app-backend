@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
-include('connection.php');
+include('../config/connection.php');
 
 $data = json_decode(file_get_contents("php://input"));
 
