@@ -1,15 +1,13 @@
 @media (max-width: 768px) {
+  button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .container {
+    padding: 20px;
+  }
   input[type='text'],
   select {
     width: 100%;
-  }
-
-  button {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .container {
-    padding: 20px;
   }
 }
